@@ -45,13 +45,13 @@
                     <h1>{{$dados_geral->titulo ?? ''}}</h1>     
                     <div class="row">
                         <div class="col-6">
-                            <p class="editor"> Por: Novo Progresso News </p> 
+                            <p class="editor"> Por: portal163 </p> 
                             <p class="editortime">{{ date( 'd/m/Y' , strtotime($dados_geral->created_at))}} às  {{ date( 'H:i' , strtotime($dados_geral->created_at))}} </p>
                         </div>
                         <div class="col-6 text-right ">     
                             <div style="margin-top: -8px">
                                 <a href="javascript:void(0)"  data-link="/noticias/show/{{$dados_geral->id ?? ''}}" onclick="share()" class="abtsocial"><img  class="btsocial" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt=""></a>                                                              
-                                <a href="https://api.whatsapp.com/send?text=🧑‍🎤 Jornal Novo Progresso:  {{$dados_geral->resumo ?? ''}}  https://novoprogressonews.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a> 
+                                <a href="https://api.whatsapp.com/send?text=🧑‍🎤 Portal 163:  {{$dados_geral->resumo ?? ''}}  https://portal163.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a> 
                                 <a href="" class="abtsocial" id="face"><img src="{{ asset('paper') }}/img/ico-face.png" class="btsocial" ></a>   
                             </div>                            
                         </div>             
@@ -64,8 +64,8 @@
                         <div class="col-12 text-center " style="padding: 20px;">     
                             <div style="margin-top: -8px">
                                 <a href="javascript:void(0)"  data-link="/noticias/show/{{$dados_geral->id ?? ''}}" onclick="share()" class="abtsocial2"><img  class="btsocial" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt=""></a>                                                              
-                                <!-- <a href="https://api.whatsapp.com/send?text=https://novoprogressonews.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial2" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a>  -->
-                                <a href="https://api.whatsapp.com/send?text=🧑‍🎤 Progresso News:  {{$dados_geral->resumo ?? ''}}  https://novoprogressonews.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial2" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a> 
+                                <!-- <a href="https://api.whatsapp.com/send?text=https://portal163.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial2" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a>  -->
+                                <a href="https://api.whatsapp.com/send?text=🧑‍🎤 Progresso News:  {{$dados_geral->resumo ?? ''}}  https://portal163.com.br/noticias/show/<?php echo $dados_geral->id ?>" class="abtsocial2" id="zap"><img src="{{ asset('paper') }}/img/ico-zap.png" class="btsocial" ></a> 
                                 <a href="" class="abtsocial2" id="face"><img src="{{ asset('paper') }}/img/ico-face.png" class="btsocial" ></a>   
                             </div>                            
                         </div>
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		navigator.share({
 			title: '<?php echo $dados_geral->titulo ?>',
 			text: '<?php echo $dados_geral->resumo ?>',
-			url: 'https://novoprogressonews.com.br/noticias/show/<?php echo $dados_geral->id ?>',
+			url: 'https://portal163.com.br/noticias/show/<?php echo $dados_geral->id ?>',
 		})
 		.then(() => console.log('Successful share'))
 		.catch((error) => console.log('Error sharing', error));

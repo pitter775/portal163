@@ -15,7 +15,7 @@
                         <span class="navbar-toggler-bar bar3"></span>
                     </button>
                 </div>
-            <a class="navbar-brand" style="margin-top: -5px;">Sistema Novo Progresso News</a>
+            <a class="navbar-brand" style="margin-top: -5px;">Sistema portal163</a>
     
         
         </div>

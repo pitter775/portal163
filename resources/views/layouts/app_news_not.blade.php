@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="theme-color" content="#04663F">
-    <!-- <base href="https://www.novoprogressonews.com.br"> -->
+    <!-- <base href="https://www.portal163.com.br"> -->
 
-    <title> novoprogressonews.com - As principais notícias da região</title>
+    <title> portal163.com - As principais notícias da região</title>
     <meta name="author" content="pitter775@gmail.com">
-    <meta name="description" content="Na novoprogressonews.com.br você encontra as noticias da região.">
+    <meta name="description" content="Na portal163.com.br você encontra as noticias da região.">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
-    <meta property="og:site_name" content="Novo Progresso News - As principais notícias da região">
+    <meta property="og:site_name" content="portal163 - As principais notícias da região">
     <meta property="og:title" content="{{$dados_geral->titulo ?? ''}}">
     <meta property="og:description" content=" {{$dados_geral->resumo ?? ''}}">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.novoprogressonews.com.br/noticias/show/{{$dados_geral->id ?? ''}}">
+    <meta property="og:url" content="https://www.portal163.com.br/noticias/show/{{$dados_geral->id ?? ''}}">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image" content="{{$dados_geral->img_url ?? ''}}" />
 
